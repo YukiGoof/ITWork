@@ -1,0 +1,180 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<style> 
+section{
+  color: #8d0707;
+}
+#picture{
+float: right;
+}
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #8d0707;
+  color: black;
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /*this is the side menu*/
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff1212;
+  display: block;
+  transition: 0.3s;
+   /*this is the side menu text*/
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+
+<!-- made bodys style here -->
+<body style="background-color:#181818;">
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="new 1.html">TRY</a>
+	<a href="it_webpage.html">Home</a>
+	<a href="Page1.html">Contact us</a>
+	<a href="Page2.html">News</a>
+	<div class="dropdown">
+		<p class="dropbtn">Work with us</p>
+		<div class="dropdown-content">
+			<a href="Page3.html">On the track</a>
+			<a href="Page4.html">In the office</a>
+		</div>
+	</div>
+</div>
+
+<div id="main">
+   <span style="font-size:30px;color:red;cursor:pointer" onclick="openNav()">&#9776; I'm nav! </span>
+</div>
+ <!-- this is how the menu button looks -->
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,100)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#181818";
+} <!-- this is how the page opens after menu is closed -->
+</script>
+<aside id="picture">
+  <img src="https://i.pinimg.com/564x/6f/33/39/6f3339a36a92e069cc2c6f6725e3269f.jpg" alt="Nature" width="250" height="1031">
+</aside>
+<section>
+<div id="Sect">
+<h1 style=color:red>
+Welcome to the main section!
+</h1>
+
+<p>
+In this section i will inform you about what semantic web should look like! Right above you can see the nav! Try pressing on it. Would you like to check out our new shows? :>
+</p>
+<p>
+Now than, right bellow me you can see articles!
+</p>
+</div>
+<br>
+<article>
+<h2 style=color:red>
+I'm an article!
+</h2>
+
+<p>
+An article is an indepenent thing inside a section! Being independant doesnt mean i dont rely on my parents anymore!
+</p>
+<p>
+What it means that i can be translated and interpreted on any device no matter the hardware or operating system! Isn't that cool?! :>
+</p>
+</article>
+<div id="Asid">
+<aside id="aside">
+  I am an aside!<br> <br>
+  I usually include examples or notes, not really part of the main article! Like a sticky note or the picture at the left side of the page!:><br>
+</aside>
+<p>
+And i'm the text that comes with the aside! This is still part of the article however i do have some extra notes that aside will help me with! 
+</p>
+</div>
+ 
+<article>
+<br>
+<h2 style=color:red>
+Second article!
+</h2>
+
+<p>
+There can be several articles with different titles to group text in more interesting regeons rather then reading one big block of text which is quite hard to concentrate on! Don't you think?
+</p><br>
+
+<p> Making webpages can be pretty fun, especially when knowing what youre doing.<br>
+Which, https://www.w3schools.com is a very helpful place to understand and learn coding<br>
+which may help you start yours aswell! Welcome to the try hards :> </p>
+
+<p> Here is a little video that you can watched if you are bored! Just some interesting news from 12 years ago!<br>
+Please enjoy! (but be warned) </p>
+</article>
+
+<iframe width="352" height="240" src="it.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<footer>And final part of the section, the footer, me! You may display info such as cookies or companys address for example. 
+<br><br>Website created with Notepad++
+<br>Creator: Luka M
+
+</footer>
+</section>
+</body>
+</html>

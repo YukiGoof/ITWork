@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<style> </style>
+</head>
+
+<style> 
+section{
+  color: #8d0707;
+}
+#picture{
+float: right;
+}
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #8d0707;
+  color: black;
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /*this is the side menu*/
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff1212;
+  display: block;
+  transition: 0.3s;
+   /*this is the side menu text*/
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+
+<!-- made bodys style here -->
+<body style="background-color:#181818;">
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="it_webpage.html">Home</a>
+	<a href="Page1.html">Contact us</a>
+	<a href="Page2.html">News</a>
+	<div class="dropdown">
+		<p class="dropbtn">Work with us</p>
+		<div class="dropdown-content">
+			<a href="Page3.html">On the track</a>
+			<a href="Page4.html">In the office</a>
+		</div>
+	</div>
+</div>
+
+<div id="main">
+   <span style="font-size:30px;color:red;cursor:pointer" onclick="openNav()">&#9776; I'm nav! </span>
+</div>
+ <!-- this is how the menu button looks -->
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,100)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#181818";
+} <!-- this is how the page opens after menu is closed -->
+</script>
+
+
+<section>
+<div id="Sect">
+<h1 style=color:red>
+Contact us
+</h1>
+
+
+<article>
+<h2 style=color:red>
+
+</h2>
+
+</article>
+<div id="Asid">
+<aside id="aside">
+
+</aside>
+
+</div>
+ 
+<article>
+<br>
+<h2 style=color:red>
+
+</h2>
+
+</article>
+
+<footer>And final part of the section, the footer, me! You may display info such as cookies or companys address for example. 
+<br><br>Website created with Notepad++
+<br>Creator: Luka M
+
+</footer>
+</section>
+</body>
+</html>
